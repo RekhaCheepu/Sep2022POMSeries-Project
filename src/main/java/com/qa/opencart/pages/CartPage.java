@@ -16,6 +16,7 @@ public class CartPage {
 	}
 	public void addtoCart() {
 		System.out.println("adding to cart");
+		System.out.println("cart is ready");
 	}
 
 }
