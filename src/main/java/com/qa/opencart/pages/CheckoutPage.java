@@ -3,8 +3,8 @@ package com.qa.opencart.pages;
 public class CheckoutPage {
 	
 			public void checkout() {
-			System.out.println("checkout....Rekha");
-		int i=10;
+			System.out.println("checkout....Naveen");
+		int i=11;
 		}
 
 	}
