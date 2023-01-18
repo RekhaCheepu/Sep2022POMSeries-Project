@@ -8,7 +8,9 @@ public class BuyNowPage {
 	String name="i pad";
 	}
 
-
+public void test() {
+	System.out.println("test method");
+}
 
 
 	}
