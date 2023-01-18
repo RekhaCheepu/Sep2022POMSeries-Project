@@ -17,6 +17,9 @@ public void test() {
 public void run(){
 	System.out.println("run method");
 }
+	public void method(){
+		System.out.println("Method is finished);
+				   }
 
 
 	}
