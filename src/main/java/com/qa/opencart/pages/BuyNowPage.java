@@ -17,7 +17,9 @@ public void test() {
 public void run(){
 	System.out.println("run method");
 }
-
+public void buy() {
+	System.out.println("buy method");
+}
 
 	}
 
