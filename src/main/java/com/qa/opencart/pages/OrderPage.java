@@ -6,5 +6,8 @@ public class OrderPage {
 		int id=12345678;
 
 	}
+	public void orderpageTest(){
+		System.out.println("order page test is compleated");
+	}
 
 }
