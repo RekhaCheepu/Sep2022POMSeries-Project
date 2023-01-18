@@ -18,7 +18,7 @@ public class POC {
 		System.out.println("POC is done");
 	}
 	public void pocStep(){
-		System.out.println("poc step is finished);
+		System.out.println("poc step is finished");
 				   }
 
 	public void PocTest() {
