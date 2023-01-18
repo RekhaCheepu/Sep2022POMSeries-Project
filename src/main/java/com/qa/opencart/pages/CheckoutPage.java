@@ -6,7 +6,10 @@ public class CheckoutPage {
 			System.out.println("checkout....Naveen");
 		int i=11;
 		}
-
+public void checkoutMethod() {
+	System.out.println("doing checkout metohd");
+	
+}
 	}
 
 
