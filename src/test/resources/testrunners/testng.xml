@@ -16,12 +16,12 @@
 		
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest">
-				<methods>
+				<!--<methods>
 					<include name="loginPageTitleTest" />
 					<include name="loginPageURLTest" />
 					<exclude name="forgotPwdLinkExistTest" />
 					<include name="loginTest" />
-				</methods>
+				</methods>-->
 			</class>
 		</classes>
 
