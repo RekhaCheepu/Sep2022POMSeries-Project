@@ -25,24 +25,23 @@ import com.qa.opencart.factory.DriverFactory;
 public class ElementUtil {
 
 	private WebDriver driver;
-private JavaScriptUtil jsUtil;
+	private JavaScriptUtil jsUtil;
+
 	public ElementUtil(WebDriver driver) {
 		this.driver = driver;
-		jsUtil=new JavaScriptUtil(driver);
+		jsUtil = new JavaScriptUtil(driver);
 	}
 
 	public WebElement getElement(By locator) {
-		WebElement ele=driver.findElement(locator);
-	
+		WebElement ele = driver.findElement(locator);
 		if(Boolean.parseBoolean(DriverFactory.highlight)) {
 			jsUtil.flash(ele);
 		}
 		return ele;
-		
 	}
 
 	public void doSendKeys(By locator, String value) {
-		WebElement ele=getElement(locator);
+		WebElement ele = getElement(locator);
 		ele.clear();
 		ele.sendKeys(value);
 	}
@@ -438,31 +437,31 @@ private JavaScriptUtil jsUtil;
 	}
 	
 	
-//	public WebElement retryingElement(By locator, int timeOut, int intervalTime) {
-//		WebElement element = null;
-//		int attempts = 0;
-//		while (attempts < timeOut) {
-//			try {
-//				element = getElement(locator);
-//				System.out.println("element is found in attempt: " + attempts);
-//				break;
-//			} catch (NoSuchElementException e) {
-//				System.out.println("element is not found in attempt : " + attempts + " for " + locator);
-//				TimeUtil.applyWait(intervalTime);
-//			}
-//			
-//			attempts++;
-//		}
-//		
-//		if(element == null) {
-//			System.out.println("element is not found....tried for : " + timeOut + " secs " + 
-//					" with the interval of "+ intervalTime  + " secs");
-//			throw new FrameWorkException("TimeOutException");
-//		}
-//		
-//		return element;
-//
-//	}
+	public WebElement retryingElement(By locator, int timeOut, int intervalTime) {
+		WebElement element = null;
+		int attempts = 0;
+		while (attempts < timeOut) {
+			try {
+				element = getElement(locator);
+				System.out.println("element is found in attempt: " + attempts);
+				break;
+			} catch (NoSuchElementException e) {
+				System.out.println("element is not found in attempt : " + attempts + " for " + locator);
+				TimeUtil.applyWait(intervalTime);
+			}
+			
+			attempts++;
+		}
+		
+		if(element == null) {
+			System.out.println("element is not found....tried for : " + timeOut + " secs " + 
+					" with the interval of "+ intervalTime  + " secs");
+			//throw new FrameworkException("TimeOutException");
+		}
+		
+		return element;
+
+	}
 	
 	
 	public void waitForPageLoad(int timeOut) {
