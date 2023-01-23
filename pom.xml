@@ -120,7 +120,7 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>src/test/resources/testrunners/testng.xml</suiteXmlFile>
  
- 					<suiteXmlFile> ${suiteXmlFiles} </suiteXmlFile>
+ 					
  
 					</suiteXmlFiles>
 
