@@ -28,14 +28,14 @@
 			</class>
 		</classes>
 
-	<!--</test>
+	</test>
 	<test name="product info Page Test">
 		
 		<classes>
 			<class name="com.qa.opencart.tests.ProductInfoPageTest">
 			
 			</class>
-		</classes>-->
+		</classes>
 
 	</test>
 
