@@ -438,31 +438,31 @@ private JavaScriptUtil jsUtil;
 	}
 	
 	
-	public WebElement retryingElement(By locator, int timeOut, int intervalTime) {
-		WebElement element = null;
-		int attempts = 0;
-		while (attempts < timeOut) {
-			try {
-				element = getElement(locator);
-				System.out.println("element is found in attempt: " + attempts);
-				break;
-			} catch (NoSuchElementException e) {
-				System.out.println("element is not found in attempt : " + attempts + " for " + locator);
-				TimeUtil.applyWait(intervalTime);
-			}
-			
-			attempts++;
-		}
-		
-		if(element == null) {
-			System.out.println("element is not found....tried for : " + timeOut + " secs " + 
-					" with the interval of "+ intervalTime  + " secs");
-			throw new FrameWorkException("TimeOutException");
-		}
-		
-		return element;
-
-	}
+//	public WebElement retryingElement(By locator, int timeOut, int intervalTime) {
+//		WebElement element = null;
+//		int attempts = 0;
+//		while (attempts < timeOut) {
+//			try {
+//				element = getElement(locator);
+//				System.out.println("element is found in attempt: " + attempts);
+//				break;
+//			} catch (NoSuchElementException e) {
+//				System.out.println("element is not found in attempt : " + attempts + " for " + locator);
+//				TimeUtil.applyWait(intervalTime);
+//			}
+//			
+//			attempts++;
+//		}
+//		
+//		if(element == null) {
+//			System.out.println("element is not found....tried for : " + timeOut + " secs " + 
+//					" with the interval of "+ intervalTime  + " secs");
+//			throw new FrameWorkException("TimeOutException");
+//		}
+//		
+//		return element;
+//
+//	}
 	
 	
 	public void waitForPageLoad(int timeOut) {
