@@ -15,12 +15,25 @@
 		
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest">
-				<methods>
-					<include name="loginPageTitleTest" />
-					<include name="loginPageURLTest" />
-					<exclude name="forgotPwdLinkExistTest" />
-					<include name="loginTest" />
-				</methods>
+			
+			</class>
+		</classes>
+
+	</test>
+	<test name="Account Page Test">
+		
+		<classes>
+			<class name="com.qa.opencart.tests.AccountsPageTest">
+			
+			</class>
+		</classes>
+
+	</test>
+	<test name="productinfo Page Test">
+		
+		<classes>
+			<class name="com.qa.opencart.tests.ProductInfoPageTest">
+			
 			</class>
 		</classes>
 
