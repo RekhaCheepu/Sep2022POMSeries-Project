@@ -19,7 +19,7 @@
 			</class>
 		</classes>
 
-	<!-- </test>
+	 </test>
 	<test name="Account Page Test">
 		
 		<classes>
@@ -28,8 +28,8 @@
 			</class>
 		</classes>
 
-	</test>
-	<test name="product info Page Test">
+</test>
+	<!--<test name="product info Page Test">
 		
 		<classes>
 			<class name="com.qa.opencart.tests.ProductInfoPageTest">
